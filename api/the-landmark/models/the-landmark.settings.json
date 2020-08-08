@@ -1,0 +1,39 @@
+{
+  "kind": "collectionType",
+  "collectionName": "the_landmarks",
+  "info": {
+    "name": "The Landmark"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "dishName": {
+      "type": "string",
+      "required": true
+    },
+    "Amount": {
+      "type": "integer"
+    },
+    "waiterName": {
+      "type": "string",
+      "required": true
+    },
+    "order": {
+      "type": "boolean",
+      "required": true
+    },
+    "category": {
+      "type": "enumeration",
+      "enum": [
+        "beverage",
+        "dessert",
+        "static"
+      ]
+    },
+    "dishNo": {
+      "type": "integer"
+    }
+  }
+}
