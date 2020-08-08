@@ -1,6 +1,5 @@
 {
-  "routes": [
-    {
+  "routes": [{
       "method": "GET",
       "path": "/the-landmarks",
       "handler": "the-landmark.find",
@@ -44,6 +43,14 @@
       "method": "DELETE",
       "path": "/the-landmarks/:id",
       "handler": "the-landmark.delete",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/the-landmarks/test/:id",
+      "handler": "the-landmark.Test",
       "config": {
         "policies": []
       }

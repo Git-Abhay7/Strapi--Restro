@@ -5,4 +5,13 @@
  * to customize this controller
  */
 
-module.exports = {};
+
+
+module.exports = { 
+    
+
+Test:async ctx=>{
+        const { id } = ctx.params;
+        return id;
+      }
+};
